@@ -8,15 +8,15 @@ los 3 intentos el sistema mostrará un mensaje
 indicándonos que hemos agotado todas las oportunidades
 • Si acertamos la clave, saldremosdirectamente del programa */
 
-let contador : number = 1;
-let claveIngresada : string; 
+let contador: number = 1;
+let claveIngresada: string = "";
 
-while (contador <= 3 && claveIngresada != "eureka") {
+while (contador <= 3 && claveIngresada !== "eureka") {
   claveIngresada = prompt("Introduzca la clave");
-  contador ++;
+  contador++;
 }
-if (claveIngresada == "eureka") {
-  console.log(Clave correcta);
+if (claveIngresada === "eureka") {
+  console.log("Clave correcta");
 } else {
   console.log("Ya no tiene más intentos");
 }
